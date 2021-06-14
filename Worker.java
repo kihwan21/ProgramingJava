@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Employee {
+class Employee {  //각 부서별 저장할 것들
 	String EmployeeName;
 	String DPT;
 	int CompanyNum;
@@ -38,6 +38,11 @@ public class Worker {
 				System.out.print("=");
 			}
 			
+			//초기화 부분
+			EmployeeName = scanner.next();  //입력 값 초기화 부분
+			DPT = scanner.next();
+			continue;
+			
 			System.out.println();
 			System.out.print("이름:");
 			System.out.println(EmployeeName);
@@ -64,4 +69,11 @@ public class Worker {
 	}
 }
 
+
+//else {
+//	System.out.println(num +"=> dosen't exist in the dictionary");
+//	System.out.print("Input word[if you want to quit, input \"stop\"]>>");
+//	num = scanner.next();  //입력 값 초기화 부분
+//	continue;
+//}
 
