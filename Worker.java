@@ -3,11 +3,11 @@ import java.util.Scanner;
 class Employee {
 	String EmployeeName;
 	String DPT;
-	String CompanyNum;
+	int CompanyNum;
 	String POS;
-	String Rank;
+	int Rank;
 
-	Employee(String EmployeeName, String DPT, String CompanyNum, String POS, String Rank){
+	Employee(String EmployeeName, String DPT, int CompanyNum, String POS, int Rank){
 		this.EmployeeName = EmployeeName;
 		this.DPT = DPT;
 		this.CompanyNum = CompanyNum;
