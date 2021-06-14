@@ -28,9 +28,8 @@ public class Worker {
 		String POS = scanner.next();
 		String Rank = scanner.next();
 		
-		while(true) {
-			if(scanner.equals("stop")) {
-				System.out.println("=> Program is terminated. Bye!!");
+		while(true) { // 계속 반복			
+			if(scanner.equals("quit")) { // quit와 같다면 while문을 빠져나옴
 				scanner.close();
 				break;
 			}
@@ -55,9 +54,13 @@ public class Worker {
 				System.out.print("=");
 			}
 			
-				
+			System.out.println();
+			System.out.println("직원의 이름, 부서, 사번, 직책, 업무 성적을 입력하시오.");
+			scanner.reset(); //안에 입력된 값을 리셋함
+			System.out.println();
 				
 		}
+		System.out.println("Exit Program"); //break에서 탈출하면 출력
 	}
 }
 
