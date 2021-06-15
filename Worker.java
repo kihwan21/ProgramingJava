@@ -29,19 +29,32 @@ public class Worker {
 		String Rank = scanner.next();
 		
 		while(true) { // 계속 반복			
-			if(scanner.equals("quit")) { // quit와 같다면 while문을 빠져나옴
+			if(EmployeeName.equals("quit")) { // quit와 같다면 while문을 빠져나옴
 				scanner.close();
 				break;
 			}
+			if(DPT.equals("quit")) { // quit와 같다면 while문을 빠져나옴
+				scanner.close();
+				break;
+			}
+			if(CompanyNum.equals("quit")) { // quit와 같다면 while문을 빠져나옴
+				scanner.close();
+				break;
+			}
+			if(POS.equals("quit")) { // quit와 같다면 while문을 빠져나옴
+				scanner.close();
+				break;
+			}
+			if(Rank.equals("quit")) { // quit와 같다면 while문을 빠져나옴
+				scanner.close();
+				break;
+			}
+			
 			
 			for(int i=1; i<=10; i++) {
 				System.out.print("=");
 			}
 			
-			//초기화 부분
-			EmployeeName = scanner.next();  //입력 값 초기화 부분
-			DPT = scanner.next();
-			continue;
 			
 			System.out.println();
 			System.out.print("이름:");
@@ -59,10 +72,20 @@ public class Worker {
 				System.out.print("=");
 			}
 			
+			EmployeeName = scanner.next();  //입력 값 초기화 부분
+			DPT = scanner.next();
+			CompanyNum = scanner.next();
+			POS = scanner.next();
+			Rank = scanner.next();
+			
 			System.out.println();
 			System.out.println("직원의 이름, 부서, 사번, 직책, 업무 성적을 입력하시오.");
-			scanner.reset(); //안에 입력된 값을 리셋함
+			
 			System.out.println();
+			
+			//초기화 부분
+			
+			
 				
 		}
 		System.out.println("Exit Program"); //break에서 탈출하면 출력
@@ -76,4 +99,12 @@ public class Worker {
 //	num = scanner.next();  //입력 값 초기화 부분
 //	continue;
 //}
+
+//int array[] = new int[]; //배열선언
+//
+//for(int i=0; i<array.length; i++) {
+//	array[i]=(int)(Math.random()*10+1);
+//	System.out.print(array[i]+"\t");
+//	}
+//	System.out.println("");
 
