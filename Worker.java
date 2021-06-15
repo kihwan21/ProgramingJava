@@ -29,7 +29,7 @@ public class Worker {
 		String Rank = scanner.next();
 		
 		while(true) { // 계속 반복			
-			if(EmployeeName.equals("quit")) { // quit와 같다면 while문을 빠져나옴
+			if(EmployeeName.equals("quit") || (DPT.equals("quit") { // quit와 같다면 while문을 빠져나옴
 				scanner.close();
 				break;
 			}
@@ -72,17 +72,21 @@ public class Worker {
 				System.out.print("=");
 			}
 			
+			//여기에다 넣어보기ㄴㄴㄴ
+			
+			
+			
 			EmployeeName = scanner.next();  //입력 값 초기화 부분
 			DPT = scanner.next();
 			CompanyNum = scanner.next();
 			POS = scanner.next();
 			Rank = scanner.next();
 			
-			System.out.println();
-			System.out.println("직원의 이름, 부서, 사번, 직책, 업무 성적을 입력하시오.");
-			
-			System.out.println();
-			
+//			System.out.println();
+//			System.out.println("직원의 이름, 부서, 사번, 직책, 업무 성적을 입력하시오.");
+//			
+//			System.out.println();
+//			
 			//초기화 부분
 			
 			
